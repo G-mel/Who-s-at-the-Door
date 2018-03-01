@@ -10,8 +10,9 @@ const fs = require('fs');
 var photoNum = 0;
 
 firebase.initializeApp({
-  databaseURL: '<firebaseURLhere>',
-  serviceAccount: './<firebaseSecurityProfile>.json'
+  databaseURL: 'https://alexadetection.firebaseio.com/',
+  serviceAccount: './alexadetection@alexadetection.iam.gserviceaccount.com
+.json'
 });
 
 /* Local Database Access */
@@ -31,8 +32,8 @@ ref.on("child_changed", function(snap) {
           url: 'https://api.kairos.com/recognize',
           headers:{
             'Content-Type': 'application/json',
-            'app_id': '<KairosAppID>',
-            'app_key': '<KairosAppKey>'
+            'app_id': '295b1046',
+            'app_key': '61d6fe802ef0f20f0344ed08361f2a0e'
           },
           body: JSON.stringify({
             image: base64data,                                              //After picture is taken, image data is set on the facial recognition API
