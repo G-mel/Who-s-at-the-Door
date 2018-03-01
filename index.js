@@ -1,5 +1,5 @@
 /* Amazon Alexa App ID */
-var APP_ID = '<Amazon APP ID HERE>';
+var APP_ID = 'Raspberrypi3';
 
 /* Include skill, Alexa responses, and DB logic files */
 var AlexaSkill = require('./AlexaSkill.js');
